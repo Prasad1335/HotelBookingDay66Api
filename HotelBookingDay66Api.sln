@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelBookingDay66Api", "HotelBookingDay66Api\HotelBookingDay66Api.csproj", "{8AB893D0-54FF-4464-B941-188A628A94E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{F8B3EE84-0E4E-433E-850F-0F2754872BF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AB893D0-54FF-4464-B941-188A628A94E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AB893D0-54FF-4464-B941-188A628A94E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AB893D0-54FF-4464-B941-188A628A94E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AB893D0-54FF-4464-B941-188A628A94E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8B3EE84-0E4E-433E-850F-0F2754872BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B3EE84-0E4E-433E-850F-0F2754872BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B3EE84-0E4E-433E-850F-0F2754872BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B3EE84-0E4E-433E-850F-0F2754872BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0845BFA6-155A-4840-815C-FD36B3DF9EBF}
+	EndGlobalSection
+EndGlobal

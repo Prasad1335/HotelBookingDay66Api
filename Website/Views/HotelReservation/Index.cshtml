@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<HotelBookingDay66Api.Dto.HotelReservationDto>
+<div class="row">
+    <div class="col-md-12"><h5 class="bg-black text-warning p-3">API Test - All Booking Reservation List</h5></div>
+    <div class="col-md-12">
+        <table class="table table-bordered">
+            <tr class="bg-warning">
+        <th>BookingId</th>
+            <th>CustomerName</th>
+            <th>CustomerMobile</th>
+            <th>CustomerEmail</th>
+            <th>CustomerAddress</th>
+            <th>HotelRefId</th>
+            <th>FromBookRoom</th>
+            <th>ToBookRoom</th> 
+    </tr>
+    @foreach(var res in Model)
+    {
+        <tr>
+            <td>@res.BookingId</td>
+            <td>@res.CustomerName</td>
+            <td>@res.CustomerMobile</td>
+            <td>@res.CustomerEmail</td>
+            <td>@res.CustomerAddress</td>
+            <td>@res.HotelRefId</td>
+            <td>@res.FromBookRoom.ToString("dd-MMM-yyyy")</td>
+            <td>@res.ToBookRoom.ToString("dd-MMM-yyyy")</td> 
+        </tr>
+      }
+        </table>
+    </div>
+</div>
