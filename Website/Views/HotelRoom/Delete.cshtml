@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model HotelBookingDay66Api.Dto.HotelRoomDto?
+
+@if (ViewData.ContainsKey("ErrorMessage"))
+{
+    <div class="text-danger">@ViewData["ErrorMessage"]</div>
+}
+else if (ViewData.ContainsKey("SuccessMessage"))
+{
+    <div class="text-success">@ViewData["SuccessMessage"]</div>
+}
+
+@if (Model != null)
+{
+    <table class="table table-bordered">
+       @* <tr>
+            <td>Id</td>
+            <td>@Model.RoomId</td>
+        </tr>*@
+        <tr>
+            <td>Name</td>
+            <td>@Model.RoomType</td>
+        </tr>
+        <tr>
+            <td>Airport Name</td>
+            <td>@Model.RoomRent</td>
+        </tr>
+    </table>
+
+    <div>
+        Are you sure you want to delete?
+
+       
+          <form method="post" asp-action="DeleteHotelRoom">
+            <input type="hidden" asp-for="@Model.RoomId" />
+            <button type="submit" class="btn btn-danger">Yes</button>
+            &nbsp;&nbsp;
+            <a class="btn btn-warning" asp-action="Search">No</a>
+        </form>
+    </div>
+}

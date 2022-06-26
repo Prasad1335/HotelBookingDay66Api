@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model HotelBookingDay66Api.Dto.HotelRoomDto
+
+<div class="row justify-content-center" >
+    <div class="col-md-4"></div>
+    <div class="col-md-4 p-0"><h5 class="bg-black text-warning p-3">API Test - Create Hotel Room</h5>
+         @if (ViewData.ContainsKey("SuccessMessage"))
+        {
+            <h3 class="text-success fw-bold p-2">@ViewData["SuccessMessage"]</h3>
+        }
+      @*  else if (ViewData.ContainsKey("ErrorMessage"))
+        {
+            <div class="text-danger">@ViewData["ErrorMessage"]</div>
+        }*@</div>
+    <div class="col-md-4"></div>
+    
+    <div class="col-md-4 border border-warning p-5">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-floating">
+                <input asp-for="RoomType" class="form-control border border-warning bg-light" required/>
+                <label asp-for="RoomType" class="form-label"></label>
+            </div>
+
+            <div class="form-floating mt-3">
+                <input asp-for="RoomRent" class="form-control border border-warning bg-light" required/>
+                <label asp-for="RoomRent" class="form-label"></label>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-outline-primary mt-3">Create Hotel Room</button>
+            </div>
+        </form>
+        
+       
+    </div>
+    </div>

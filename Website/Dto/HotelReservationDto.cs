@@ -12,7 +12,9 @@
        
         public string CustomerAddress { get; set; }
         public int? HotelRefId { get; set; }
-       
+        public string HotelName { get; set; }
+
+
         public DateTime FromBookRoom { get; set; }
        
         public DateTime ToBookRoom { get; set; }

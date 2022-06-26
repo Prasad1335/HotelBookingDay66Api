@@ -15,6 +15,7 @@
         <td>Id</td>
         <td>Room Type</td>
         <td>Room Rent</td>
+        <td colspan="2">Operations</td>
     </tr>
     @foreach(var rooms in Model)
     {
@@ -22,6 +23,8 @@
             <td>@rooms.RoomId</td>
             <td>@rooms.RoomType</td>
             <td>@rooms.RoomRent</td>
+            <td><a class="btn btn-info" asp-action="Edit" asp-route-id="@rooms.RoomId">Edit</a> </td>
+            <td><a class="btn btn-danger" asp-action="Delete" asp-route-id="@rooms.RoomId">Delete</a> </td>
         </tr>
       }
         </table>
